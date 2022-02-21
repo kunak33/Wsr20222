@@ -1,0 +1,7 @@
+-systemctl disable firewalld
+-systemctl stop firewalld
+
+-nano /etc/selinux/config
+-selinux= disabled
+-setenforce 0
+-reboot

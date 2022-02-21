@@ -1,0 +1,6 @@
+
+- nano /etc/nat.sh
+-ip link del name tun2
+-Ip tunnel add name tun1 mode gre local *внеш* remote *к кому* ttl 65
+-ip add add dev tun2 *айпи тунеля*
+-ip link set dev tun2 up

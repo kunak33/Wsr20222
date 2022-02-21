@@ -1,0 +1,15 @@
+-Отключим фаервол(по приколу ) и системы     
+ защиты линукс
+ 
+#systemctl disable firewalld
+#systemctl stop firewalld
+#systemctl status service 
+
+-Selinux:
+-#Vi /etc/selinux/config
+-i  
+-(Enforcing) Enebled -->diseble
+-Esc
+- :wq
+- #setenforce 0
+- #reboot

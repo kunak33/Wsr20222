@@ -1,0 +1,17 @@
+Iptables -L -v -n (тип фаервола )
+Iptables -t nat -L
+
+#touch /etc/nat.sh создать файл
+#chmod +x /etc/nat.sh  сделать исполняемым
+#Chmod +x /etc/rc.local
+#Ls -la /etc/nat.sh
+
+#Vi /etc/rc.local
+В рц локал прописать путь файла 
+  /Etc/nat.sh
+
+Файл nat.sh должна иметь след строчку
+Iptables -t nat -A POSTROUTING -o ens192 -j MASQUERADE (маскарад)
+
+#reboot
+#iptables -t nat -L проверка

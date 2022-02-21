@@ -1,0 +1,19 @@
+ #ospf 23.221
+-Vi /etc/frr/daemons  (заходим в файл конфига)
+
+3 демона которые нужно врубить в конфиге
+vtysh = 1
+Zebra = 1
+Ospfd= 1
+
+-systemctl Reatart frr
+-Vtysh
+-conf t
+-route ospf
+-network a.b.z.d/23 area 0.0.0.0
+-passive-interface ens(xxx)
+/*-если есть тунели
+-int tun1  
+-Ospf network point-to-point*/
+-
+-Tcpdump -i tun1 слушать 

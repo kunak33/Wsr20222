@@ -1,0 +1,24 @@
+Dhcp 
+
+#dhcp
+
+mc мц коммандер файловый менеджер миднайт 
+
+-/etc/dhcp/dhcpd.conf
+A slighty sifferebt configuration
+-subnet 172.16.100.0(пул адресов) netmask 255.255.255.0(маска){
+- range 172.16.100.65 172.16.100.75(пул адресов);
+- option domain-name-servers 172.16.20.10 (айпи домена);
+- option domain-name "skill39.wsr" (имя домена);
+- option routers 172.16.100.1;
+- option broadcast-address 172.16.100.255;
+- defualt-lease-time 600;
+- max-lease-time 7200;
+}
+
+
+
+
+фиксированный
+00:0C:29:83:EF:20
+Осторож

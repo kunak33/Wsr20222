@@ -1,0 +1,12 @@
+На роутерах
+#Ip ro табл маршрутизации
+#Cat procsysnetipv4ip_forward
+ 0
+#Vi etcsysctl.d99-sysctl.conf
+
+В файл конфига
+
+ net.Ipv4.ip_forward =1
+  что мы машина работала как роутер  после ребута
+ # Reboot
+#forwardinf 
